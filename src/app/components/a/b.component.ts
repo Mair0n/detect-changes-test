@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'b-component',
   template: '<div>B-COMPONENT</div>',
   styles: [
-    'div { background-color: yellow; color: red; width: 100%; }',
+    'div { border: 1px solid yellow; color: red; width: 100%; }',
     ':host { width: 100% }',
   ],
 })
