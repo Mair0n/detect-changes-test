@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'bb-component',
@@ -8,6 +8,11 @@ import { Component, Input } from '@angular/core';
     ':host { width: 100% }',
   ],
 })
-export class BBComponent {
-  @Input() public bbData = 'bbData';
+export class BBComponent implements OnChanges {
+  
+  public bbData;
+
+  public ngOnChanges(changes): void {
+    ////console.log('bbComponent', changes);
+  }
 }
